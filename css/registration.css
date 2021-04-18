@@ -3,6 +3,80 @@
 *::after {
     box-sizing: border-box;
 }
+fbody {
+    font-family: 'Oswald', sans-serif;
+    color: #3D3D40;
+}
+header {
+    background-color: #E0E0E0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.content{
+    margin-top: 50px;
+}
+header div {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+header img {
+    transform: scaleX(-1);
+    width: 95px;
+}
+header a {
+    text-decoration: none;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 16px;
+    color: #404040;
+    letter-spacing: 1px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 100px;
+    transition: color 0.3s;
+}
+header div:hover h1 {
+    color: #3BA0FF;
+}
+header nav {
+    display: flex;
+}
+header nav a {
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #0C0F63;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #3BA0FF;
+}
+header section {
+    display: flex;
+    width: 200px;
+    justify-content: center;
+}
+header #sign-in {
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    font-size: 14px;
+    border: 1px solid black;
+    padding: 0.5em 1em;
+}
+
 
 body {
     margin: 0;
@@ -27,7 +101,7 @@ body {
 .forms {
     display: flex;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .form-wrapper {
@@ -284,3 +358,89 @@ body {
     box-shadow: inset 0 0 0 2px #0C0F63;
     transform: translateX(25%);
 }
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+.socialbutton
+{
+    width:345px;
+    height:70px;
+    margin:11px auto;
+    border-radius:3px;
+    position:relative;
+    cursor:pointer;
+    -webkit-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -o-transition:0.5s ease;
+    -ms-transition:0.5s ease;
+    transition:0.5s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+#gplus
+{
+    background:#f2553b;
+    border-bottom:2px solid #a62518;
+}
+
+#twitter
+{
+    background:#00a7fd;
+    border-bottom:2px solid #1172b7;
+}
+
+#facebook
+{
+    background:#3b5998;
+    border-bottom:2px solid #233d73;
+}
+
+.fa
+{
+    font-size:2.5em;
+}
+
+.fa-gplus{color:#aa2619; border-right:1px solid #d4382b}
+.fa-ter{color:#137ac2;border-right:1px solid #0c80ca}
+.fa-fb{color:#2c457b;border-right:1px solid #2f4a83}
+
+.icons
+{
+    text-align:center;
+    width:60px;
+    padding:6px;
+    position:absolute;
+    margin-top:10px;
+}
+
+.signtext
+{
+    color:#fff;
+    font-family:Roboto;
+}
+
+.signtext
+{
+    color:#fff;
+    font-family:Roboto;
+    font-size:1.3em;
+    position:absolute;
+    left: 100px;
+    top: 21px;
+}
+
+.socialbutton:hover
+{
+    box-shadow: 0px 10px 5px -10px #000;
+    -webkit-transform:scale(1.01);
+    -moz-transform:scale(1.01);
+    -o-transform:scale(1.01);
+    -ms-transform:scale(1.01);
+    transform:scale(1.01);
+    -webkit-transition:0.5s ease;
+    -moz-transition:0.5s ease;
+    -o-transition:0.5s ease;
+    -ms-transition:0.5s ease;
+    transition:0.5s ease;
+}
+
