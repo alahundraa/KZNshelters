@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../css/aboutUs.css" type="text/css"/>
-
 </head>
 <body>
 <header>
@@ -74,25 +73,30 @@
         </div>
     </div>
 </div>
-
+<div class = "maps-new">
+    <h2>Где мы находимся?</h2>
+</div>
 <div class="maps">
-        <h2>Где мы находимся?</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.0780970403493!2d49.12085569780934!3d55.791881795147034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead1154a251b7%3A0x9d2bb4764b144bf0!2z0YPQuy4g0JrRgNC10LzQu9C10LLRgdC60LDRjywgMzUsINCa0LDQt9Cw0L3RjCwg0KDQtdGB0L8uINCi0LDRgtCw0YDRgdGC0LDQvSwgNDIwMDA4!5e0!3m2!1sru!2sru!4v1618834716734!5m2!1sru!2sru" width="600" height="450" style="border:0px; margin-left: auto; margin-right: auto;" allowfullscreen="" loading="lazy"></iframe>
+    <div id="map"></div>
+<script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpEafZNFXua7GaKjVNeGLANc8okC2QEn8&callback=initMap" async defer>
+    </script>
 </div>
 
 
 <div class = "adapt">
-<footer>
-    <div>
-        <a href=""><img src="https://wkniffin.w3.uvm.edu/cs142/assignment7/pics/logo.gif" alt="logo"></a>
-    </div>
-    <ul id="footer-nav">
-        <li><a href="">Главная</a></li>
-        <li><a href="">Контакты</a></li>
-        <li><a href="">О нас</a></li>
-    </ul>
-</footer>
+    <footer>
+        <div>
+            <a href=""><img src="https://wkniffin.w3.uvm.edu/cs142/assignment7/pics/logo.gif" alt="logo"></a>
+        </div>
+        <ul id="footer-nav">
+            <li><a href="">Главная</a></li>
+            <li><a href="">Контакты</a></li>
+            <li><a href="">О нас</a></li>
+        </ul>
+    </footer>
 </div>
 
 </body>
 </html>
+<script src="../js/aboutUs.js"></script>
