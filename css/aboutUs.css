@@ -195,12 +195,11 @@ footer p {
     padding: 2em;
 }
 
-.maps {
+.maps-new{
     padding: 0px;
     text-align: center;
 }
-
-.adapt {
-    display: grid;
-    grid-template-rows: repeat(auto-fill, 100px);
+#map {
+    height: 400px;
+    width: 100%;
 }
