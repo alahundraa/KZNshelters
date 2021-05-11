@@ -1,10 +1,11 @@
-*{
-    padding: 0!important;
-    margin: 0!important;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
 
 fbody {
-    font-family: 'Oswald', sans-serif;
+    font-family: Oswald, sans-serif;
     color: #3D3D40;
 }
 header {
@@ -13,10 +14,16 @@ header {
     align-items: center;
     justify-content: space-around;
     height: 80px;
-    position: fixed;
     top: 0px;
     left: 0px;
+    right: 0px;
     width: 100%;
+}
+ul{
+    list-style: none;
+}
+.content{
+    margin-top: 50px;
 }
 header div {
     display: flex;
@@ -51,7 +58,7 @@ header nav a {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
-    color: #0C0F63;
+    color: #0c0f63;
     font-size: 18px;
     transition: color 0.3s;
 }
@@ -73,4 +80,3 @@ header #sign-in {
     border: 1px solid black;
     padding: 0.5em 1em;
 }
-

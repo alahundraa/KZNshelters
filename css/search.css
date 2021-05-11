@@ -101,53 +101,27 @@ html {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin: auto;
 }
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+/* Bootstrap 4 text input with search icon */
 
-.about-section {
-    left: 0px;
-    right: 0px;
-    padding: 80px;
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
     text-align: center;
-    background-color: #474e5d;
-    color: white;
+    pointer-events: none;
+    color: #aaa;
 }
-
-.container {
-    padding: 0 16px;
-}
-
-.container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.title {
-    color: grey;
-}
-
-.button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-}
-
-.button:hover {
-    background-color: #555;
-}
-
-@media screen and (max-width: 650px) {
-    .column {
-        width: 100%;
-        display: block;
-    }
-}
-
 footer {
     display: flex;
     justify-content: space-between;
@@ -193,13 +167,4 @@ footer p {
     font-size: 13px;
     line-height: 20px;
     padding: 2em;
-}
-
-.maps-new{
-    padding: 0px;
-    text-align: center;
-}
-#map {
-    height: 400px;
-    width: 100%;
 }
