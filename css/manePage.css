@@ -332,3 +332,7 @@ footer p {
         padding: 3em;
     }
 }
+
+ul{
+    list-style: none;
+}
