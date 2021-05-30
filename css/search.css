@@ -21,6 +21,7 @@ header {
     left: 0px;
     right: 0px;
     width: 100%;
+    z-index: 9999;
 }
 ul{
     list-style: none;
@@ -266,10 +267,26 @@ body {
 .card-content p {
     font-size: 95%;
 }
+.card button{
+    margin-bottom: 25px;
+}
 
 img {
     width: 100%;
     height: auto;
+}
+.navbar-form button{
+    float: right;
+}
+.navbar-form .form-group{
+    float: left;
+    max-width: 530px;
+    width: 100%;
+}
+.navbar-form{
+    display: inline-block;
+
+    width: 100%;
 }
 
 /* Flexbox styles */
