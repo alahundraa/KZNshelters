@@ -10,7 +10,7 @@ fbody {
     font-family: 'Oswald', sans-serif;
     color: #3D3D40;
 }
-header {
+header{
     background-color: #E0E0E0;
     display: flex;
     align-items: center;
@@ -276,7 +276,7 @@ img {
     height: auto;
 }
 .navbar-form button{
-    float: right;
+    float: left;
 }
 .navbar-form .form-group{
     float: left;
@@ -363,4 +363,7 @@ footer p {
     font-size: 13px;
     line-height: 20px;
     padding: 2em;
+}
+.form-control{
+    width: 125%;
 }
