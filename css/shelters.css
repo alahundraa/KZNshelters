@@ -10,7 +10,7 @@ fbody {
     font-family: 'Oswald', sans-serif;
     color: #3D3D40;
 }
-header{
+header {
     background-color: #E0E0E0;
     display: flex;
     align-items: center;
@@ -104,7 +104,7 @@ html {
 }
 .main {
     width: 50%;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 /* Bootstrap 4 text input with search icon */
 
@@ -267,26 +267,10 @@ body {
 .card-content p {
     font-size: 95%;
 }
-.card button{
-    margin-bottom: 25px;
-}
 
 img {
     width: 100%;
     height: auto;
-}
-.navbar-form button{
-    float: left;
-}
-.navbar-form .form-group{
-    float: left;
-    max-width: 530px;
-    width: 100%;
-}
-.navbar-form{
-    display: inline-block;
-
-    width: 100%;
 }
 
 /* Flexbox styles */
@@ -363,7 +347,4 @@ footer p {
     font-size: 13px;
     line-height: 20px;
     padding: 2em;
-}
-.form-control{
-    width: 125%;
 }
