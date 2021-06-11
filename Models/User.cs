@@ -1,4 +1,10 @@
-﻿namespace KZNshelter.Models
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+
+namespace KZNshelters.Models
 {
     public enum Roles
     {
@@ -8,7 +14,7 @@
     }
     public class User
     {
-        
+
         public int Id { get; set; }
         public string Shelter_Name { get; set; }
         public string ImagePath { get; set; }
