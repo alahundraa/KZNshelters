@@ -14,23 +14,16 @@ namespace Users.Areas.Identity
     public class IdentityHostingStartup : IHostingStartup
     {
 
-        public void ConfigureServices(IServiceCollection services)
+        public void Configure(IWebHostBuilder builder)
         {
-            
-        }
-        public void Configure(IWebHostBuilder builder, IApplicationBuilder app)
-        {
-            //builder.ConfigureServices((context, services) => {
-            //    services.AddDbContext<UsersContext>(options =>
-            //        options.UseSqlServer(
-            //            context.Configuration.GetConnectionString("UsersContextConnection")));
+            builder.ConfigureServices((context, services) => {
+                services.AddDbContext<UsersContext>(options =>
+                    options.UseSqlServer(
+                        context.Configuration.GetConnectionString("UsersContextConnection")));
 
-            //    services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-            //        .AddEntityFrameworkStores<UsersContext>();
-            //});
-
-            app.UseAuthentication();
-            app.UseAuthorization();
+                services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                    .AddEntityFrameworkStores<UsersContext>();
+            });
         }
 
        
